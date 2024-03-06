@@ -130,7 +130,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
           </div>
 
           <div className=" w-full mx-auto  items-center text-white leading-none  lg:rounded-full flex lg:inline-flex" role="alert">
-          <span className=" rounded-full bg-red-500 px-4 py-2  text-md mx-auto justify-center"> Hey   {gender==="Male"?("Ninja 🐱‍👤 "):("Queen 👸🏻")} , Here's Your Report Card </span>
+          <span className=" rounded-full bg-red-500 px-4 py-2  text-md mx-auto justify-center"> Hey   {gender==="Male"?(" Alien 👽 "):("Queen 👸🏻")} , Here's Your Report Card </span>
           </div>
           {/* Here goes Use data */}
     
