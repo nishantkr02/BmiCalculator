@@ -69,7 +69,7 @@ function BmiForm() {
     {/* Greet  */}
    
       <div className=" w-full mx-auto  items-center text-indigo-100 leading-none  lg:rounded-full flex lg:inline-flex" role="alert my-2">
-       <span className=" rounded-full bg-indigo-600 px-4 py-2  text-md mx-auto justify-center my-2"> Hey  {gender==="Male"?("Ninja 👽 "):("Queen 👸🏻")} , Let's Get to know you </span>
+       <span className=" rounded-full bg-indigo-600 px-4 py-2  text-md mx-auto justify-center my-2"> Hey  {gender==="Male"?("Alien 👽 "):("Queen 👸🏻")} , Let's Get to know you </span>
     
       
      </div>
