@@ -156,7 +156,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
 
    <div className="w-full  mx-auto px-2  rounded-lg ">
         <img 
-        className=" mx-auto shadow-lg sm:w-3/4 w-3/4 rounded-t-lg   rounded-full px-4 py-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 "
+        className=" mx-auto shadow-lg sm:w-3/4 w-full rounded-t-lg   rounded-full px-4 py-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 "
          src="/bmi.png" alt="gender image" 
          
          />
@@ -170,7 +170,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
       {/* Image 2*/}          
       <div className="w-full  mx-auto px-2 rounded-lg    ">
         <img 
-        className=" mx-auto  shadow-lg sm:w-3/4 w-3/4  rounded-t-lg   rounded-full px-4 py-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 "
+        className=" mx-auto  shadow-lg sm:w-3/4 w-full rounded-t-lg   rounded-full px-4 py-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 "
          src="/weight.svg" alt="weight" 
        
          />
@@ -186,7 +186,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
      {/* Image 3 */}
      <div className="w-full  mx-auto  rounded-lg ">
         <img 
-        className=" mx-auto shadow-lg sm:w-3/4 w-3/4 rounded-t-lg   rounded-full px-4 py-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 "
+        className=" mx-auto shadow-lg sm:w-3/4 w-full rounded-t-lg   rounded-full px-4 py-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 "
          src="/foodintake.svg" alt="gender image" 
          
          />

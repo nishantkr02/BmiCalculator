@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <div className=" flex items-center justify-center w-full  ">
-  <div className="bg-[url('/bg4.jpeg')] bg-auto  mx-auto w-full max-w-lg  shadow-2xl rounded-xl px-4 py-4 h-dvh border border-black ">
+  <div className="bg-[url('/bg4.jpeg')] bg-auto  mx-auto w-full max-w-lg  shadow-2xl rounded-xl px-4 py-4 h-auto border border-black ">
 
   <div className='  mx-auto'>
 
