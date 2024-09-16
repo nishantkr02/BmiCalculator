@@ -13,7 +13,7 @@ const Input = React.forwardRef(function Input({label,type="text",...props},ref) 
     </div>
     <div className="md:w-2/3 items-center ">
       <input 
-      className="bg-gray-200 appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
+      className="bg-white text-xs border border-gray-100  rounded w-full py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" 
       type={type}
       id={id}
       ref={ref}

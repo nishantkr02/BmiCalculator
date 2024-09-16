@@ -37,7 +37,7 @@ function Gender() {
      {/* Alert */}
    
         {/* 2 divs for 2 card inside link */}
-        <div className='flex items-center justify-center w-full p-4 mb-4   '>
+        <div className='flex items-center justify-center w-full mx-auto p-4 mb-4   '>
             <GenderCard url="/male.svg" name="Male" handler={male} />
             <GenderCard url="/female.svg" name="Female" handler={female} />
 

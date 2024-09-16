@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 function GenderCard({url,name,handler}) {
  
   return (
-    <div className="w-full  border py-7  rounded-lg shadow-2xl bg-gray-700 border-gray-700 m-2">
+    <div className=" flex justify-center  border py-7  rounded-lg shadow-2xl bg-gray-700 border-gray-700 m-2">
     
         <img 
         className=" shadow-xl sm:w-3/4 w-full   rounded-t-lg hover:bg-red-500  rounded-full px-6 py-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 "

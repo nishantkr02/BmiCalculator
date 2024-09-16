@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Logo from './Logo'
 import { useForm } from 'react-hook-form'
 import Input from './Input';
+import Select from './Select';
 import { addData, switchUnit } from '../App/bmiSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -18,8 +19,8 @@ function BmiForm() {
   const hadlerToggle =()=>{
     setCheck((prev)=>!prev)
     if(unit==="Metric"){
-      setUnit("Standard") ;
-      dispatch(switchUnit("Standard"))
+      setUnit("Imperial") ;
+      dispatch(switchUnit("Imperial"))
      
     }
     else{
@@ -38,6 +39,7 @@ function BmiForm() {
       age :"",
       weight:"",
       height :"",
+      activityLevel:"",
       
     },
   });
@@ -57,7 +59,7 @@ function BmiForm() {
 
   return (
     <div className='flex items-center justify-center w-full  '>
-    <div className={`mx-auto w-full max-w-lg bg-gray-100 shadow-2xl rounded-xl px-4 py-4 border border-black `}>
+    <div className={`mx-auto w-full max-w-xl bg-gray-100 shadow-2xl rounded-xl px-4 py-4 border border-black `}>
 
      {/* Logo Div ------ */}
       <div className='mb-2 flex justify-center sm:w-1/3 w-1/2  mx-auto rounded-full px-6  transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 '>
@@ -90,7 +92,7 @@ function BmiForm() {
        <Input 
       label ="Age : "
       type='age'
-      placeholder ="Your Age "
+      placeholder ="Age in Years "
     
       {
         ...register("age",{required:true})
@@ -103,7 +105,7 @@ function BmiForm() {
       <Input 
       label ={`Weight :(in ${unit==="Metric"?("Kg"):("Lbs")}) `}
       type='weight'
-      placeholder ="Your Weight"
+      placeholder ={ unit==="Metric"?("Weight in Kilograms"):("Weight in Pounds")}
      
       {
         ...register("weight",{required:true})
@@ -112,7 +114,7 @@ function BmiForm() {
       <Input 
       label ={`Height :(in ${unit==="Metric"?("cm"):("Ft")}) `}
       type='height'
-      placeholder ="Your Height "
+      placeholder ={ unit==="Metric"?("Heigth in cm"):(`E.g : Write 5'7"  as 5.7`)}
  
       {
         ...register("height",{required:true})
@@ -120,19 +122,29 @@ function BmiForm() {
       />
 
       </div>
+      <div>
+      <Select 
+      label =" Activity Level :"
+      options={["Sedentary:Little or no exercise","Lightly Active:Light exercise/sports 1-3 days/week","Moderately Active:Moderate exercise/sports 3-5 days/week","Very Active:Hard exercise/sports 6-7 days a week","Super Active:Very hard exercise/physical job & exercise 2x/day"]}
+      className="my-2 text-sm inline-block"
+      {...register("activityLevel", { required: true })}
+      />
+      </div>
 
         {/* Toggle----  */}
-      <div className=' inset-y-5 right-0  mx-auto mb-4  '>
-     <label className="inline-flex items-center  cursor-pointer mx-auto">
-     <span className=" text-sm font-medium text-gray-900 dark:text-gray-800 mx-2">Current Unit :   </span>
+      <div className='flex justify-start mx-auto mb-4    py-4 '>
+     <label className="flex justify-start  ">
+     <span className=" text-sm font-medium text-gray-600  mx-2">Current Unit :   </span>
       <input type="checkbox" value={unit} className="sr-only peer" checked={check} onChange={hadlerToggle}/>
        <div className="relative w-12 h-6  bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-gray-300 dark:peer-focus:ring-indigo-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600"></div>
-       <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-800">{unit}</span>
+       <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-800">{unit=="Imperial"?"Imperial(US standard)":unit}</span>
      
      </label>
      </div>
 
-      <button type='submit'  className='bg-green-700 text-white font-bold px-4 mt-4 py-2 rounded-2xl transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 ' >Submit </button>
+      <button type='submit'  className='w-full bg-green-500 text-white font-bold px-4 mt-4 py-2 rounded-2xl transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 ' >
+        Submit </button>
+
       </form>
 
       <div className="flex justify-between">
