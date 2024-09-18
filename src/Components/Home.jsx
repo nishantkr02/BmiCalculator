@@ -35,7 +35,7 @@ function Home() {
         <div className='flex flex-row w-full  mx-auto  my-2 '>
         <div className='flex   mx-auto'>
                <button 
-               className='bg-pink-500  px-6 py-2 rounded-full text-lg font-medium text-white  hover:bg-gray-700 hover:-translate-y-1 duration-100'
+               className='bg-teal-500  px-6 py-2 rounded-full text-lg font-medium text-white  hover:bg-pink-500 hover:-translate-y-1 duration-100'
                onClick={()=>navigate('/gender')}
                >Take the First Step in Your Health Journey
 

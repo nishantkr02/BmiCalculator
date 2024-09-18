@@ -115,16 +115,16 @@ const activityFactors = {
 
 console.log("here the BMI is :",bmi);
 if(bmi<18.5){
-  setRes({col:"bg-orange-500",heading:"UnderWeight",msg:" You need to bulk up, eat healthier calories, and work out"}) ;
+  setRes({col:"bg-pink-600",heading:"UnderWeight",msg:" You need to bulk up, eat healthier calories, and work out"}) ;
 }
-else if(bmi>18.5 && bmi<24.9)
+else if(bmi>18.5 && bmi<=24.9)
 setRes({col:"bg-green-500",heading:"Perfect",msg:"Bravo ! You are in a perfect Shape . keep it up ."})
 
-else if(bmi>25 && bmi<29.9)
+else if(bmi>=25 && bmi<=29.9)
 setRes({col:"bg-purple-500",heading:"Attention",msg:"Hey, you’re getting Fat. It’s time to hit the gym again."})
 
-else if(bmi>30 )
-setRes({col:"bg-red-500",heading:"Danger",msg:"You're are Obese(Super Unhealthy) . If you want to live a long life,get your shit together ASAP ...!!!"})
+else if(bmi>=30 )
+setRes({col:"bg-pink-600",heading:"Danger",msg:"You're are Obese ( i.e, Super Unhealthy ) .  If you want to live a long life , get your shit together ASAP ...!!!"})
 
 else 
 setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
@@ -150,14 +150,14 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
           </div>
 
           <div className=" w-full mx-auto  items-center text-white leading-none  lg:rounded-full flex lg:inline-flex" role="alert">
-          <span className=" rounded-full bg-red-500 px-4 py-2  text-md mx-auto justify-center"> Hey   {gender==="Male"?(" 👽 "):("👸🏻")} , Here's Your Report Card </span>
+          <span className=" rounded-full bg-pink-500 px-4 py-2  text-md mx-auto justify-center"> Hey   {gender==="Male"?(" 👽 "):("👸🏻")} , Here's Your Report Card </span>
           </div>
           {/* Here goes Use data */}
     
   
      <div className="w-full max-w-sm   rounded-full shadow-2xl bg-gray-800 mt-2 mx-auto">
      <div className="flex flex-col items-center pb-10">
-      <img className="w-24 h-24 mb-3 rounded-full shadow-lg bg-white mt-2" src={gender==="Male"?("/male.svg "):("/female.svg")}
+      <img className="w-24 h-24 mb-3 rounded-full shadow-lg bg-white mt-2" src={gender==="Male"?("/batman.svg "):("/woman.svg")}
        alt="Image"/>
 
       <h5 className="mb-1 text-xl font-medium text-white ">{data.name}</h5>
@@ -182,7 +182,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
          
          />
             <h5 className=" font-semibold tracking-tight text-red-700 py-5 ">
-             Body Mass Index  <br/> <span className='text-blue-500'>{bmi}  </span> 
+             Body Mass Index  <br/> <span className='text-blue-500 md:text-xl'>{bmi}  </span> 
             </h5>
    
      </div>
@@ -196,7 +196,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
        
          />
             <h5 className="  py-5 font-semibold tracking-tight text-red-700  ">
-              Ideal Weight <br/>     <span className='text-blue-500'> {iwLow}-{iwHigh} {unit==="Metric"?("Kg"):("Lbs")}</span>
+              Ideal Weight <br/>     <span className='text-blue-500 md:text-xl text-lg'> {iwLow}-{iwHigh} {unit==="Metric"?("Kg"):("Lbs")}</span>
             </h5>
 
     
@@ -212,7 +212,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
          
          />
             <h5 className=" font-semibold tracking-tight text-red-700 py-5 ">
-             Maintainance Cal   <br/> <span className='text-blue-500'>{bmr} Kcal </span> 
+             Maintainance Cal   <br/> <span className='text-blue-500 md:text-xl text-lg'>{bmr} Kcal </span> 
             </h5>
    
      </div>
@@ -228,14 +228,19 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
     <div className="bg-grey-200 text-left border-t border-b border-blue-500 text-gray-900 font-medium  py-2 mb-2" role="alert">
   
 
-    <p className="text-sm mt-2"> <span className="font-bold text-red-500">BMI &#10511;</span> Body Mass Index (BMI) is a simple, widely-used measure to evaluate a person’s body weight relative to their height. It provides a numerical value that categorizes individuals into different weight status categories , such as underweight, normal weight, overweight, or obese </p>
+    <p className="text-sm mt-2"> <span className="font-bold text-red-500">BMI &#10511;</span> Body Mass Index (BMI) is a simple, widely-used measure to evaluate a person’s body weight relative to their height. It provides a numerical value that categorizes individuals into different weight status categories , such as underweight, normal weight, overweight, or obese .<span className='text-teal-500 underline'><Link to="https://www.healthifyme.com/blog/bmi-calculator/">Read More</Link></span> </p>
 
-   <p className="text-sm mt-2 "> <span className="font-bold text-red-500">Ideal Weight &#10511;</span> Ideal Weight according to your height ,calculated assuming the Healthy BMI Range(18.5 -24.9) . See the image above for BMI Range </p>
+   <p className="text-sm mt-2 "> <span className="font-bold text-red-500">Ideal Weight &#10511;</span> Ideal Weight according to your height ,calculated assuming the Healthy BMI Range(18.5 -24.9) .<br/> See the image above for BMI Range .
+   <span className='text-teal-500 underline'><Link to="https://www.healthifyme.com/blog/bmi-calculator/">Read More</Link></span>
+    </p>
 
 
-   <p className="text-sm mt-2"> <span className="font-bold text-red-500">Maintainance Cal &#10511;</span> The required daily Calories  to maintain your current weight ,based on your weight ,height,age ,gender and Activity Level . It is also known as TDEE(Total Daily Energy Expenditure)     .    TDEE=BMR×Activity Factor
+   <p className="text-sm mt-2"> <span className="font-bold text-red-500">Maintainance Cal &#10511;</span> The required daily Calories  to maintain your current weight ,based on your weight ,height,age ,gender and Activity Level .<br/> It is also known as TDEE(Total Daily Energy Expenditure)     . <br/>    TDEE=BMR×Activity Factor . 
+   <span className='text-teal-500 underline'><Link to="https://www.healthline.com/health/how-to-calculate-your-basal-metabolic-rate#limitations">Read More</Link></span>
+
+
 </p>
-<p className="text-sm mt-2 text-red-600"> <span className="font-bold text-lg text-green-500">Disclaimer &#10511;</span>
+<p className="text-sm mt-2 text-pink-500"> <span className="font-bold text-lg text-teal-500">Disclaimer &#10511; </span>
  While useful, BMR calculators are not 100% accurate.
 Although the Mifflin-St. Jeor equation is known as one of the most accurate calculators, its result can be off by around 10%Trusted Source of your true BMR.
 </p>
@@ -243,11 +248,11 @@ Although the Mifflin-St. Jeor equation is known as one of the most accurate calc
    </div>
 
       {/* Info Divs */}        
-    <div className="flex   bg-red-500 text-white text-sm font-bold px-4 py-2 mb-2 rounded-xl mb-10" >
-   <p className='flex text-center mx-auto items-center'> Know everything about BMI , BMR and TDEE </p>
+    <div className="flex   bg-pink-500 text-white text-md font-bold px-4 py-2 my-10 rounded-full " >
+   <p className='flex text-center mx-auto items-center '> Know everything about BMI , BMR and TDEE </p>
    <Link to={'/about'} >
-   <p></p>
-   <p className=' bg-green-500 px-2 py-1 rounded-full'>Click Here.</p>
+   
+   <p className=' bg-teal-500 px-4 py-1 text-xs rounded-full hover:bg-gray-700'>Click Here.</p>
      </Link>
     </div>
 

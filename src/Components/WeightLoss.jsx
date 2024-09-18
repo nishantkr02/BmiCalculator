@@ -10,7 +10,7 @@ function WeightLoss() {
 
      <div className='mb-2 flex flex-row justify-center'>
           <div className=" flex justify-center items-center mx-auto max-w-[200px] mb-4 ">
-             <img src='/beginFitnes.jpg' className='w-full rounded-3xl object-contain' />
+             <img src='/beginFitnes.jpg' className='w-full rounded-full object-contain' />
           </div>
           <div className='flex items-center justify-center -mt-4'>
             <p className='text-gray-600 font-bold text-2xl'>Here, I will share every aspect of the weight loss journey.<br/> Stay tuned!</p>

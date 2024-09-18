@@ -147,8 +147,8 @@ function BmiForm() {
 
       </form>
 
-      <div className="flex justify-between">
-  <button className="bg-gray-700 w-48 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-r" onClick={()=>navigate('/gender')}>
+      <div className="flex justify-between mt-10">
+  <button className="bg-gray-700 w-24 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-r" onClick={()=>navigate('/gender')}>
     Go Back
   </button>
 
