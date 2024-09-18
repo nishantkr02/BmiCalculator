@@ -13,7 +13,7 @@ function WeightLoss() {
              <img src='/beginFitnes.jpg' className='w-full rounded-full object-contain' />
           </div>
           <div className='flex items-center justify-center -mt-4'>
-            <p className='text-gray-600 font-bold text-2xl'>Here, I will share every aspect of the weight loss journey.<br/> Stay tuned!</p>
+            <p className='text-gray-600 font-bold text-2xl'>Here, I will be sharing every aspect of the weight loss journey.<br/> Stay tuned!</p>
             
 
           </div>
