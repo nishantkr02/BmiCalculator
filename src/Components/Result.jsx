@@ -115,13 +115,13 @@ const activityFactors = {
 
 console.log("here the BMI is :",bmi);
 if(bmi<18.5){
-  setRes({col:"bg-orange-500",heading:"UnderWeight",msg:" You need to bulk up ,eat more healthy calories and Work out."}) ;
+  setRes({col:"bg-orange-500",heading:"UnderWeight",msg:" You need to bulk up, eat healthier calories, and work out"}) ;
 }
 else if(bmi>18.5 && bmi<24.9)
 setRes({col:"bg-green-500",heading:"Perfect",msg:"Bravo ! You are in a perfect Shape . keep it up ."})
 
 else if(bmi>25 && bmi<29.9)
-setRes({col:"bg-purple-500",heading:"Attention",msg:"Hey You're getting Fat , It's time to Hit the Gym Again . "})
+setRes({col:"bg-purple-500",heading:"Attention",msg:"Hey, you’re getting Fat. It’s time to hit the gym again."})
 
 else if(bmi>30 )
 setRes({col:"bg-red-500",heading:"Danger",msg:"You're are Obese(Super Unhealthy) . If you want to live a long life,get your shit together ASAP ...!!!"})
@@ -139,8 +139,8 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
 
     return (
 
-<div className='flex items-center justify-center w-full  '>
-  <div className={`mx-auto w-full max-w-lg bg-gray-100 shadow-2xl rounded-xl p-10 border border-black `}>
+<div className='flex items-center justify-center w-full mx-auto max-w-xl '>
+  <div className={`mx-auto w-full max-w-xl bg-white rounded-xl p-4 border border-black `}>
     
          {/* Logo Div ------ */}
           <div className='mb-2 flex justify-center sm:w-1/3  w-1/2 mx-auto  mx-auto rounded-full px-6  transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110'>
@@ -150,12 +150,12 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
           </div>
 
           <div className=" w-full mx-auto  items-center text-white leading-none  lg:rounded-full flex lg:inline-flex" role="alert">
-          <span className=" rounded-full bg-red-500 px-4 py-2  text-md mx-auto justify-center"> Hey   {gender==="Male"?(" Alien 👽 "):("Queen 👸🏻")} , Here's Your Report Card </span>
+          <span className=" rounded-full bg-red-500 px-4 py-2  text-md mx-auto justify-center"> Hey   {gender==="Male"?(" 👽 "):("👸🏻")} , Here's Your Report Card </span>
           </div>
           {/* Here goes Use data */}
     
   
-     <div className="w-full max-w-sm   rounded-full shadow-2xl bg-green-400 mt-2 mx-auto">
+     <div className="w-full max-w-sm   rounded-full shadow-2xl bg-gray-800 mt-2 mx-auto">
      <div className="flex flex-col items-center pb-10">
       <img className="w-24 h-24 mb-3 rounded-full shadow-lg bg-white mt-2" src={gender==="Male"?("/male.svg "):("/female.svg")}
        alt="Image"/>
@@ -251,15 +251,15 @@ Although the Mifflin-St. Jeor equation is known as one of the most accurate calc
      </Link>
     </div>
 
-   <div className="flex justify-between mt-2">
-  <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l" onClick={()=>navigate('/bmiForm')}>
-    Prev
+   <div className="flex justify-between mt-10">
+   <button className="bg-gray-800 w-24 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-r" onClick={()=>navigate('/bmiForm')}>
+    Go Back
   </button>
-  <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r "onClick={()=>navigate('/')}>
+  <button className="bg-gray-800 w-24 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 " onClick={()=>navigate('/')}>
     Home
   </button>
-  <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r "onClick={()=>navigate('/about')}>
-    Next
+  <button className="bg-gray-800 w-24 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-l" onClick={()=>navigate('/about')}>
+    Info
   </button>
 </div>  
          

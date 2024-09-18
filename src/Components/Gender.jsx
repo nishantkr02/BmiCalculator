@@ -57,9 +57,9 @@ function Gender() {
           ) : (<div></div>)
         }
 
-<div className="flex justify-between">
-  <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l" onClick={()=>navigate('/')}>
-    Prev
+<div className="flex justify-between my-10 p-4">
+<button className="bg-gray-700 w-48 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-r" onClick={()=>navigate('/')}>
+    Go Back
   </button>
 
  </div>

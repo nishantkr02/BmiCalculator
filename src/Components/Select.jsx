@@ -18,7 +18,7 @@ function Select(
     {...props}
     id={id}
     ref={selectRef}
-    className={`sm:px-3 sm:py-3 rounded-lg bg-white text-black outline-none focus:bg-gray-50 duration-200 border border-gray-200 w-full ${className} focus:border-purple-500`}
+    className={`sm:px-3 sm:py-3 rounded-lg bg-white text-black outline-none focus:bg-gray-50 duration-200 border border-gray-400 w-full ${className} focus:border-purple-500 h-12 `}
     > 
     {
         options ?.map((optionValue)=>(

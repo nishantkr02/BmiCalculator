@@ -58,8 +58,8 @@ function BmiForm() {
 
 
   return (
-    <div className='flex items-center justify-center w-full  '>
-    <div className={`mx-auto w-full max-w-xl bg-gray-100 shadow-2xl rounded-xl px-4 py-4 border border-black `}>
+    <div className='flex mx-auto items-center justify-center md:w-3/4 max-w-xl '>
+    <div className={` w-full   shadow-2xl rounded-xl px-4 py-4 border border-black `}>
 
      {/* Logo Div ------ */}
       <div className='mb-2 flex justify-center sm:w-1/3 w-1/2  mx-auto rounded-full px-6  transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 '>
@@ -70,16 +70,16 @@ function BmiForm() {
       
     {/* Greet  */}
    
-      <div className=" w-full mx-auto  items-center text-indigo-100 leading-none  lg:rounded-full flex lg:inline-flex" role="alert my-2">
-       <span className=" rounded-full bg-indigo-600 px-4 py-2  text-md mx-auto justify-center my-2"> Hey  {gender==="Male"?("Alien 👽 "):("Queen 👸🏻")} , Let's Get to know you </span>
+      <div className=" w-full mx-auto  items-center text-white leading-none  lg:rounded-full flex lg:inline-flex" role="alert my-2">
+       <span className=" rounded-full bg-indigo-600 px-4 py-2  text-md mx-auto font-medium justify-center my-2"> Hey  {gender==="Male"?("👽 "):("👸🏻")} , Let's Get to know you </span>
     
       
      </div>
    
 
 
-      <form onSubmit={handleSubmit(submit)} className=" w-full mx-auto  mb-4 pb-2 h-96">
-      <div className="w-full px-2 justify-center mx-auto flex  pb-2">
+      <form onSubmit={handleSubmit(submit)} className=" w-full mx-auto  mb-4 pb-2 h-96 max-w-xl">
+      <div className="flex w-full px-2 justify-between mx-auto   pb-2">
       <Input 
       label ="Name : "
       type='name'
@@ -142,17 +142,17 @@ function BmiForm() {
      </label>
      </div>
 
-      <button type='submit'  className='w-full bg-green-500 text-white font-bold px-4 mt-4 py-2 rounded-2xl transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 ' >
+      <button type='submit'  className='w-full bg-green-500 text-white font-bold px-4 mt-4 py-2 rounded-2xl transition ease-in-out delay-100 hover:-translate-y-1 hover:bg-gray-800 ' >
         Submit </button>
 
       </form>
 
       <div className="flex justify-between">
-  <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l" onClick={()=>navigate('/gender')}>
-    Prev
+  <button className="bg-gray-700 w-48 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-r" onClick={()=>navigate('/gender')}>
+    Go Back
   </button>
 
-  { nextPage ? ( <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r "onClick={()=>navigate('result')}>
+  { nextPage ? ( <button className="  bg-gray-800 w-48 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-r "onClick={()=>navigate('result')}>
     Next
   </button>)  :(<></>)}
  </div>

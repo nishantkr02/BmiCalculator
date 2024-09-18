@@ -10,6 +10,7 @@ import BmiForm from './Components/BmiForm.jsx'
 import Home from './Components/Home.jsx'
 import Result from './Components/Result.jsx'
 import About from './Components/About.jsx'
+import WeightLoss from './Components/WeightLoss.jsx'
 const router = createBrowserRouter([
   {
     path:'/' ,
@@ -47,7 +48,10 @@ const router = createBrowserRouter([
       path :'/result',
       element:<Result />,
       
-   },
+   },{
+    path:"/fitness-journey",
+    element:<WeightLoss />
+   }
   
     
   
