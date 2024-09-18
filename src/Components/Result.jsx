@@ -242,7 +242,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
 </p>
 <p className="text-sm mt-2 text-pink-500"> <span className="font-bold text-lg text-teal-500">Disclaimer &#10511; </span>
  While useful, BMR calculators are not 100% accurate.
-Although the Mifflin-St. Jeor equation is known as one of the most accurate calculators, its result can be off by around 10%Trusted Source of your true BMR.
+Although the Mifflin-St. Jeor equation is known as one of the most accurate calculators, its result can be off by around 10% of your true BMR.
 </p>
 
    </div>
@@ -256,14 +256,14 @@ Although the Mifflin-St. Jeor equation is known as one of the most accurate calc
      </Link>
     </div>
 
-   <div className="flex justify-between mt-10">
-   <button className="bg-gray-800 w-24 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-r" onClick={()=>navigate('/bmiForm')}>
+   <div className="flex w-full justify-between mt-10">
+   <button className="bg-gray-800 sm:w-24 w-16 text-center sm:text-sm text-xs rounded-full hover:bg-gray-400 text-white font-bold py-2 sm:px-4 rounded-r" onClick={()=>navigate('/bmiForm')}>
     Go Back
   </button>
-  <button className="bg-gray-800 w-24 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 " onClick={()=>navigate('/')}>
+  <button className="bg-gray-800 sm:w-24 rounded-full sm:text-sm w-16 text-center text-xs hover:bg-gray-400 text-white font-bold py-2 sm:px-4  " onClick={()=>navigate('/')}>
     Home
   </button>
-  <button className="bg-gray-800 w-24 rounded-full hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-l" onClick={()=>navigate('/about')}>
+  <button className="bg-gray-800 md:w-24 w-16 text-center sm:text-sm text-xs rounded-full hover:bg-gray-400 text-white font-bold py-2 sm:px-4  rounded-l" onClick={()=>navigate('/about')}>
     Info
   </button>
 </div>  

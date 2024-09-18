@@ -49,10 +49,10 @@ function About() {
             <div className='w-3/4 py-2  flex justify-center  mx-auto  border-b-2 border-gray-900  mb-6'>
                 <p className='text-sm font-bold text-green-500'>Below are some of the links used in my research; these will help you understand your body better.</p>
             </div>
-        <div  className='bg-white max-w-xl  '>
+        <div  className='bg-white max-w-xl text-sm sm:text-md'>
         {
             helpMsg.map((msg)=>
-                (<div className="px-4 py-2 bg-gray-900 items-center justify-start leading-none lg:rounded-full flex   mt-3 shadow  rounded-2xl lg:h-20 sm:h-28  h-32 mt-2 ">
+                (<div className="px-4 py-2 bg-gray-900 items-center justify-start leading-none lg:rounded-full flex   mt-3 shadow  rounded-2xl lg:h-20 sm:h-28  h-32  ">
 
                     <Link to={msg.link} className=" w-1/3 font-bold mr-2  text-green-500 flex-auto p-4 ">{msg.heading}  </Link>
            
