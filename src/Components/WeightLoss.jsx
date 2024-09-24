@@ -41,7 +41,7 @@ function WeightLoss() {
 
                 <div className='flex flex-wrap h-auto w-full p-2 '>
 
-                  <p className=' justify-start text-sm sm:text-lg font-medium text-gray-600 mb-2 underline'>Physical Health Benefits :</p>
+                  <p className=' justify-start text-sm sm:text-lg font-medium text-gray-600 mb-2 underline'>Physical Health Benefits </p>
 
                   <p className='  text-sm font-medium text-gray-600 text-left mb-1.5'> 
                     <span className='text-teal-500 '> Improved Overall Health : </span>
@@ -62,7 +62,7 @@ function WeightLoss() {
                 </div>
 
                 <div className='flex flex-col h-auto  w-full p-2 '>
-                  <p className='flex justify-start text-sm sm:text-lg font-medium text-gray-600  mb-2 underline'>Mental Health Benefits:</p>
+                  <p className='flex justify-start text-sm sm:text-lg font-medium text-gray-600  mb-2 underline'>Mental Health Benefits </p>
                   
                   <p className=' text-sm font-medium text-gray-600 text-left mb-1.5'> 
                     <span className='text-teal-500'> Boosted Self-Esteem & Enhanced Body Image : </span>  
