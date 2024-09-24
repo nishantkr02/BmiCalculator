@@ -68,14 +68,18 @@ const activityFactors = {
       let height =data.height ;
      
       let weight =data.weight ;
+      console.log("Height before coversion",height)
+      console.log("weight before coversion",weight)
+
 
         if(unit==="Imperial"){
-          height =Math.floor( convertToCm(height));
-          console.log("Height after coversion",height)
-          weight = Math.floor(convertPoundsToKg(weight) ) ;
-          console.log("weight after coversion",weight)
-        }
+          height =Math.ceil( convertToCm(height));
         
+          weight = Math.ceil(convertPoundsToKg(Math.ceil(weight)) ) ;
+          
+        }
+        console.log("Height after coversion",height)
+        console.log("weight after coversion",weight)
       
       let heightInMeter =(height)/100 ;
       let heightSqr=heightInMeter*heightInMeter ;
@@ -94,9 +98,9 @@ const activityFactors = {
       //BMR Calculation ;
       if(gender==="Male"){
         let bmrD =  (10*weight) +(6.25 * height ) - (5 * data.age)+5
-        console.log('BMRD :: ',bmrD)
+       
         bmrD =bmrD* (activity.factor || 1.2) ;
-        console.log('BMRD :: ',bmrD)
+       
         setBmr(bmrD.toFixed(2)) ;
       }
       else{
@@ -139,7 +143,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
 
     return (
 
-<div className='flex items-center justify-center w-full mx-auto max-w-xl '>
+<div className='flex items-center justify-center w-full mx-auto  '>
   <div className={`mx-auto w-full max-w-xl bg-white rounded-xl p-4 border border-black `}>
     
          {/* Logo Div ------ */}
@@ -196,7 +200,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
        
          />
             <h5 className="  py-5 font-semibold tracking-tight text-red-700  ">
-              Ideal Weight <br/>     <span className='text-blue-500 md:text-xl text-lg'> {iwLow}-{iwHigh} {unit==="Metric"?("Kg"):("Lbs")}</span>
+              Ideal Weight <br/>     <span className='text-blue-500 md:text-xl text-lg'> {iwLow}-{iwHigh} Kg</span>
             </h5>
 
     

@@ -6,7 +6,7 @@ function WeightLoss() {
   return (
     <div className='flex flex-col w-4/5    px-2 mx-auto  border sm:px-6 my-1 shadow-2xl rounded bg-white'>
 
-     <div className=' flex flex-col  justify-between mx-auto max-w-3xl md:w-full  '>
+     <div className=' flex flex-col  justify-between mx-auto w-screen sm:w-full  '>
 
      <div className='mb-2 flex flex-row justify-center '>
           <div className=" w-1/4 flex justify-center items-center mx-auto  mb-4   ">
@@ -41,7 +41,7 @@ function WeightLoss() {
 
                 <div className='flex flex-wrap h-auto w-full p-2 '>
 
-                  <p className=' justify-start text-lg font-medium text-gray-600 mb-2 underline'>Physical Health Benefits :</p>
+                  <p className=' justify-start text-sm sm:text-lg font-medium text-gray-600 mb-2 underline'>Physical Health Benefits :</p>
 
                   <p className='  text-sm font-medium text-gray-600 text-left mb-1.5'> 
                     <span className='text-teal-500 '> Improved Overall Health : </span>
@@ -62,7 +62,7 @@ function WeightLoss() {
                 </div>
 
                 <div className='flex flex-col h-auto  w-full p-2 '>
-                  <p className='flex justify-start text-lg font-medium text-gray-600  mb-2 underline'>Mental Health Benefits:</p>
+                  <p className='flex justify-start text-sm sm:text-lg font-medium text-gray-600  mb-2 underline'>Mental Health Benefits:</p>
                   
                   <p className=' text-sm font-medium text-gray-600 text-left mb-1.5'> 
                     <span className='text-teal-500'> Boosted Self-Esteem & Enhanced Body Image : </span>  
