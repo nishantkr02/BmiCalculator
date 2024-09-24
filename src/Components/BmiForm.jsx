@@ -58,8 +58,8 @@ function BmiForm() {
 
 
   return (
-    <div className='flex mx-auto items-center justify-center md:w-3/4 max-w-xl '>
-    <div className={` w-full   shadow-2xl rounded-xl px-4 py-4 border border-black `}>
+    <div className='flex mx-auto items-center justify-center w-screen sm:w-3/4 m-2 p-4 '>
+    <div className={` w-full   shadow-2xl rounded-xl p-2 border border-black `}>
 
      {/* Logo Div ------ */}
       <div className='mb-2 flex justify-center sm:w-1/3 w-1/2  mx-auto rounded-full px-6  transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 '>

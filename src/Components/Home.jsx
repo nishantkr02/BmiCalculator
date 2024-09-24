@@ -4,9 +4,9 @@ import {useNavigate} from 'react-router-dom'
 function Home() {
         const navigate = useNavigate();
   return (
-    <div className='flex flex-wrap md:w-2/3 w-full px-2 mx-auto  border sm:px-6 my-1 shadow-2xl rounded bg-white'>
+    <div className='flex flex-wrap w-screen px-4 border  sm:w-3/4 w-full  mx-auto  border sm:px-6 my-1 shadow-2xl rounded bg-white'>
 
-         <div className=' flex flex-row w-full justify-between mx-auto max-w-xl   '>
+         <div className=' flex flex-row w-full justify-between mx-auto    '>
 
 
 

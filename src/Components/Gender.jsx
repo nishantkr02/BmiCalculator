@@ -22,7 +22,7 @@ function Gender() {
     
   }
   return (
-    <div className='flex items-center justify-center md:w-full h-full max-w-lg mx-auto '>
+    <div className='flex items-center justify-center w-screen px-2 sm:w-full h-full  mx-auto '>
     <div className={`mx-auto w-full max-w-lg bg-gray-100 shadow-2xl rounded-xl md:px-4 md:py-4 p-1 border border-black `}>
 
      {/* Logo Div ------ */}

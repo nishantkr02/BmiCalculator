@@ -31,8 +31,8 @@ function About() {
     ]
     const navigate = useNavigate();
   return (
-    <div  className='flex items-center justify-center w-screen sm:w-full  mx-auto '>
-      <div className={`mx-auto w-screen  sm:w-3/4   bg-white shadow-2xl rounded-xl  sm:px-4  `}>
+    <div  className='flex items-center justify-center w-screen  sm:w-3/4  mx-auto border  '>
+      <div className={`mx-auto w-screen  sm:w-3/4   bg-white shadow-2xl rounded-xl  sm:px-4   `}>
     
 
          {/* Logo Div ------ */}
@@ -49,10 +49,10 @@ function About() {
             <div className='w-3/4 py-2  flex justify-center  mx-auto  border-b-2 border-gray-900  mb-6'>
                 <p className='text-sm font-bold text-green-500'>Below are some of the links used in my research; these will help you understand your body better.</p>
             </div>
-        <div  className='bg-white w-screen sm:w-full text-sm sm:text-md mx-auto'>
+        <div  className='bg-white w-screen sm:w-full text-sm sm:text-md mx-auto p-2'>
         {
             helpMsg.map((msg)=>
-                (<div className="px-4 py-2 bg-gray-900 items-center justify-start leading-none lg:rounded-full flex   mt-3 shadow  rounded-2xl lg:h-20 sm:h-28  h-32  ">
+                (<div className=" bg-gray-900 items-center justify-start leading-none lg:rounded-full flex   mt-3 shadow  rounded-2xl lg:h-20 sm:h-28  h-32   ">
 
                     <Link to={msg.link} className=" w-1/3 font-bold mr-2  text-green-500 flex-auto p-4 ">{msg.heading}  </Link>
            
