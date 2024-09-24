@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 function WeightLoss() {
     const navigate = useNavigate()
   return (
-    <div className='flex flex-col w-4/5    px-2 mx-auto  border sm:px-6 my-1 shadow-2xl rounded bg-white'>
+    <div className='flex flex-col w-full   px-2 mx-auto  border sm:px-6 my-1 shadow-2xl rounded bg-white'>
 
      <div className=' flex flex-col  justify-between mx-auto w-screen sm:w-full  '>
 
