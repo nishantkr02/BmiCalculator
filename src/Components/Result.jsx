@@ -144,7 +144,7 @@ setRes({col:"bg-yellow-500",heading:"Error",msg:"Something Unexpected occured"})
     return (
 
 <div className='flex items-center justify-center w-full mx-auto  '>
-  <div className={`mx-auto w-full max-w-xl bg-white rounded-xl p-4 border border-black `}>
+  <div className={`mx-auto w-full  bg-white rounded-xl p-4 border border-black `}>
     
          {/* Logo Div ------ */}
           <div className='mb-2 flex justify-center sm:w-1/3  w-1/2 mx-auto  mx-auto rounded-full px-6  transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110'>
