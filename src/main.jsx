@@ -48,7 +48,8 @@ const router = createBrowserRouter([
       path :'/result',
       element:<Result />,
       
-   },{
+   },
+   {
     path:"/fitness-journey",
     element:<WeightLoss />
    }
